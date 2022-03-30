@@ -7,8 +7,14 @@ summa2 = 0
 #     summa1 += i
 #     summa2 += g[i]
 # print(summa1, summa2)
-print(*g.values())
-print(*g.keys())
-for k in g.values():
-    summa1 += k
-print(summa1)
+
+# for i in g.values():
+#     summa1 += i
+# for k in g.keys():
+#     summa2 += k
+# print(summa1, summa2)
+
+for i, g in g.items():
+    summa1 += i
+    summa2 += g
+print(summa1, summa2)
