@@ -10,7 +10,11 @@ a = float(input('Введите число: '))
 
 g = []
 s = str(a)
+count = 0
 for i in s:
     if i != '.':
         g.append(int(i))
 print(sum(g))
+for j in g:
+    count += j
+print(count)
